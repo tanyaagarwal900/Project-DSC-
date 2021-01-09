@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* background-color:cornsilk; */
+}
+
+.max-width .logo a{
+    color:blue;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.menu li{
+    list-style: none;
+    display: inline-block;
+}
+.menu li a{
+    display: block;
+    color: rgb(245, 31, 174);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.menu li a:hover{
+    color: rgb(252, 8, 158);
+}
+
+section{
+    padding: 100px 0;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+
+.about, .skills, .contact{
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .a-content, 
+.skills .s-content,
+.contact .con-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home{
+    display: flex;
+    background: url("img2.jpg") no-repeat center;
+    height: 50vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 30px;
+}
+.home .h-content .first{
+    font-size: 27px;
+}
+.home .h-content .second{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .h-content .third{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.about .a-content .left{
+    width: 45%;
+}
+.about .a-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .a-content .right{
+    width: 55%;
+}
+.about .a-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+
+.skills .s-content .column{
+    width: calc(50% - 30px);
+}
+.skills .s-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .s-content .left p{
+    text-align: justify;
+}
+.skills .s-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .c-content .column{
+    width: calc(50% - 30px);
+}
+.contact .c-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .c-content .left p{
+    text-align: justify;
+}
