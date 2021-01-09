@@ -1,48 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    /* background-color:cornsilk; */
-}
-
-.max-width .logo a{
-    color:blue;
-    font-size: 35px;
-    font-weight: 600;
-}
-
-.menu li{
-    list-style: none;
-    display: inline-block;
-}
-.menu li a{
-    display: block;
-    color: rgb(245, 31, 174);
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;
-    transition: color 0.3s ease;
-}
-.menu li a:hover{
-    color: rgb(252, 8, 158);
 }
 
 section{
     padding: 100px 0;
 }
-
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
-
-
 .about, .skills, .contact{
     font-family: 'Poppins', sans-serif;
 }
-
 .about .a-content, 
 .skills .s-content,
 .contact .con-content{
@@ -51,7 +26,6 @@ section{
     align-items: center;
     justify-content: space-between;
 }
-
 section .title{
     position: relative;
     text-align: center;
@@ -60,6 +34,54 @@ section .title{
     margin-bottom: 60px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: crimson;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color:#fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
 }
 
 .home{
@@ -137,4 +159,25 @@ section .title{
 }
 .contact .c-content .left p{
     text-align: justify;
+}
+.contact .c-content .left .icons{
+    margin: 10px 0;
+}
+.contact .c-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .c-content .row .info{
+    margin-left: 30px;
+}
+.contact .c-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .c-content .info .head{
+    font-weight: 500;
+}
+.contact .c-content .info .sub-title{
+    color: #333;
 }
